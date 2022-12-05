@@ -79,7 +79,7 @@ h3 {
 }
 
 section {
-  width: 1110px;
+  width: var(--max-content-width);
   margin: 100px 0;
   text-align: center;
 }
@@ -108,11 +108,26 @@ section {
   box-sizing: border-box;
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 header .container {
   justify-content: space-between;
   min-height: 900px;
-  height: 10vh;
+  height: 100vh;
+}
+
+.second-column {
+  break-before: column;
+}
+
+.header-button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  background: #FE8A02;
+  padding: 12px 24px;
+  margin-top: 40px;
 }

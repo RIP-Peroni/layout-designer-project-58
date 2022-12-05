@@ -35,8 +35,27 @@ body {
   font-weight: 400;
 }
 
+section {
+  display: block;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 header {
   background-color: var(--light);
+}
+
+header .container {
+  align-items: flex-start;
 }
 
 .bg {
@@ -80,17 +99,6 @@ h3 {
   font-size: 34px;
 }
 
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: var(--max-content-width);
-  margin: 0 auto;
-  padding: 100px 0;
-}
-
 .main-img {
   height: 525px;
   position: absolute;
@@ -102,13 +110,17 @@ section {
   color: var(--main);
 }
 
+.white {
+  color: var(--white);
+}
+
 .columns-2 {
   column-count: 2;
   column-gap: 30px;
   text-align: left;
 }
 
-header section {
+header .container {
   justify-content: space-between;
   min-height: 900px;
   height: 100vh;
@@ -142,4 +154,41 @@ iframe {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+.menu {
+  background: var(--main-dark);
+}
 
+.container-menu {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px 30px;
+}
+
+.card {
+  display: inline-block;
+  width: 302px;
+  height: 275px;
+  padding: 24px;
+  background: var(--light);
+}
+
+.card-header {
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  width: 350px;
+  height: 323px;
+}
+
+.card-header h2 {
+  font-size: 52px;
+}
+
+.card-number {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-family: "Neucha", sans-serif;
+  font-size: 64px;
+  text-align: left;
+}

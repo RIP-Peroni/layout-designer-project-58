@@ -97,6 +97,8 @@ h2 {
 
 h3 {
   font-size: 34px;
+  margin-bottom: 16px;
+  color: var(--main);
 }
 
 .main-img {
@@ -150,8 +152,17 @@ iframe {
   border: 0;
 }
 
+.container-video {
+  height: 805px;
+}
+
 .video {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  width: 919px;
+  height: 569px;
+  /*z-index: 100;*/
+  /*position: relative;*/
+  /*bottom: -100px;*/
 }
 
 .menu {
@@ -166,17 +177,22 @@ iframe {
 }
 
 .card {
-  display: inline-block;
   width: 302px;
   height: 275px;
+  /*max-height: 302px;*/
+  /*302*/
   padding: 24px;
   background: var(--light);
+  text-align: left;
+}
+
+.higher-card {
+  height: 302px;
 }
 
 .card-header {
   display: inline-block;
   padding: 0;
-  text-align: left;
   width: 350px;
   height: 323px;
 }
@@ -186,9 +202,9 @@ iframe {
 }
 
 .card-number {
-  display: inline-block;
   margin-bottom: 40px;
   font-family: "Neucha", sans-serif;
   font-size: 64px;
+  line-height: 1em;
   text-align: left;
 }

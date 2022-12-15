@@ -8,3 +8,6 @@ lint:
 
 deploy:
 	npx surge ./src/
+
+compile:
+	sass --watch src/styles/scss/app.scss src/styles/scss/output.css

@@ -225,7 +225,7 @@ iframe {
 }
 
 .header-with-brown-bg {
-  box-sizing: content-box;
+  /*box-sizing: content-box;*/
   width: 100%;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -238,8 +238,17 @@ iframe {
 }
 
 .header-with-brown-bg h4 {
+  font-family: var(--open-sans-font);
   line-height: 1.2;
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.top-block-effect {
+  width: 100%;
+}
+
+.img-effect-block {
+  vertical-align: middle;
 }

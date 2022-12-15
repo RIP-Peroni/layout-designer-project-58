@@ -160,9 +160,6 @@ iframe {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   width: 919px;
   height: 569px;
-  /*z-index: 100;*/
-  /*position: relative;*/
-  /*bottom: -100px;*/
 }
 
 .menu {
@@ -180,8 +177,6 @@ iframe {
 .card {
   width: 302px;
   height: 275px;
-  /*max-height: 302px;*/
-  /*302*/
   padding: 24px;
   background: var(--light);
   text-align: left;
@@ -207,5 +202,4 @@ iframe {
   font-family: "Neucha", sans-serif;
   font-size: 64px;
   line-height: 1em;
-  text-align: left;
 }

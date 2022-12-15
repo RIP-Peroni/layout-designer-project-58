@@ -44,6 +44,7 @@ header .container {
 
 .bg {
   position: relative;
+  width: 100%;
 }
 .bg::before {
   position: absolute;

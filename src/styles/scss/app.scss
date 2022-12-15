@@ -17,6 +17,10 @@ $open-sans-font: "Open Sans", sans-serif;
   padding: 0;
 }
 
+@mixin no-desktop {
+  @media (max-width: 1079px) { @content; }
+}
+
 @font-face {
   font-family: "Open Sans";
   src: url("../../fonts/OpenSans-VariableFont_wdth,wght.ttf");
@@ -249,13 +253,13 @@ header,
 }
 
 .brown {
+  text-align: left;
+
   .header {
     width: 100%;
     margin-top: 100px;
     margin-bottom: 20px;
     padding: 5px 10px;
-
-    text-align: left;
 
     background-color: $brown;
 
@@ -271,8 +275,27 @@ header,
   .top-block {
     width: 100%;
 
-    .img-top-block {
-      vertical-align: middle;
+    .items-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .left-part {
+        flex-basis: 578px;
+        flex-shrink: 0;
+
+        .img-top-block {
+          vertical-align: middle;
+        }
+      }
+
+      .right-part {
+        flex-basis: 502px;
+
+        @include no-desktop {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

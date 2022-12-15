@@ -195,12 +195,14 @@ header .effect-description,
   line-height: 1.2;
 }
 
+.brown {
+  text-align: left;
+}
 .brown .header {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
-  text-align: left;
   background-color: #b09a81;
 }
 .brown .header h4 {
@@ -213,8 +215,25 @@ header .effect-description,
 .brown .top-block {
   width: 100%;
 }
-.brown .top-block .img-top-block {
+.brown .top-block .items-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.brown .top-block .items-flex .left-part {
+  flex-basis: 578px;
+  flex-shrink: 0;
+}
+.brown .top-block .items-flex .left-part .img-top-block {
   vertical-align: middle;
+}
+.brown .top-block .items-flex .right-part {
+  flex-basis: 502px;
+}
+@media (max-width: 1079px) {
+  .brown .top-block .items-flex .right-part {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

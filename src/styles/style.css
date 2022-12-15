@@ -12,6 +12,8 @@
   --blue: #1085c5;
   --max-content-width: 1110px;
   --main-font-size: 16px;
+  --neucha-font: "Neucha", sans-serif;
+  --open-sans-font: "Open Sans", sans-serif;
 }
 
 @font-face {
@@ -27,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--open-sans-font);
   text-align: center;
   font-size: var(--main-font-size);
   line-height: 1.6em;
@@ -50,7 +52,7 @@ section {
   padding: 100px 0;
 }
 
-header {
+header, #ikea-effect {
   background-color: var(--light);
 }
 
@@ -77,8 +79,8 @@ p {
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-family: "Neucha", sans-serif;
+h1, h2, h3, h4 {
+  font-family: var(--neucha-font);
   font-weight: 400;
   line-height: 1.2em;
   margin: 0;
@@ -99,6 +101,10 @@ h3 {
   font-size: 34px;
   margin-bottom: 16px;
   color: var(--main);
+}
+
+h4 {
+  font-size: 14px;
 }
 
 .main-img {
@@ -122,14 +128,15 @@ h3 {
   text-align: left;
 }
 
+
+.second-column {
+  break-before: column;
+}
+
 header .container {
   justify-content: space-between;
   min-height: 900px;
   height: 100vh;
-}
-
-.second-column {
-  break-before: column;
 }
 
 .header-button {
@@ -199,7 +206,40 @@ iframe {
 
 .card-number {
   margin-bottom: 40px;
-  font-family: "Neucha", sans-serif;
+  font-family: var(--neucha-font);
   font-size: 64px;
   line-height: 1em;
+}
+
+.small-header {
+  font-family: var(--neucha-font);
+  font-size: 24px;
+  color: var(--translucent-dark);
+}
+
+.effect-description {
+  margin-top: 30px;
+  font-size: 34px;
+  line-height: 1.2;
+  font-family: var(--neucha-font);
+}
+
+.header-with-brown-bg {
+  box-sizing: content-box;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  text-align: left;
+  background-color: var(--brown);
+
+
+  /*line-height: 1;*/
+}
+
+.header-with-brown-bg h4 {
+  line-height: 1.2;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
 }

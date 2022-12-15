@@ -167,6 +167,7 @@ iframe {
 
 .menu {
   background: var(--main-dark);
+  padding-top: 100px;
 }
 
 .container-menu {

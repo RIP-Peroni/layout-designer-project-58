@@ -2,6 +2,7 @@ $white: #fff;
 $translucent-white: #d7ccc0;
 $light: #f5f4f0;
 $main: #fe8a02;
+$main-hover: #ba7000;
 $main-dark: #42413c;
 $dark: #2a2626;
 $translucent-dark: #908d8b;
@@ -185,6 +186,10 @@ header {
 
     border: 0;
   }
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .light {
@@ -333,6 +338,11 @@ header {
     gap: 20px 30px;
     justify-content: flex-start;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     .card-header {
       display: inline-block;
       width: 350px;
@@ -357,6 +367,16 @@ header {
         margin-bottom: 16px;
       }
 
+      &:hover {
+        color: $white;
+
+        background-color: $main;
+
+        .hover-white {
+          color: $white;
+        }
+      }
+
       .card-number {
         margin-bottom: 40px;
 
@@ -373,6 +393,16 @@ header {
 }
 
 footer {
+  .credentials {
+    margin-top: 76px;
+
+    text-align: center;
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+
   .container {
     box-sizing: content-box;
     padding: 100px 0;
@@ -397,10 +427,11 @@ footer {
       }
 
       .email-block {
-        color: $white;
         box-sizing: border-box;
         width: 50%;
         padding-left: 15px;
+
+        color: $white;
 
         .subscription-form {
           display: flex;
@@ -429,7 +460,13 @@ footer {
             background-color: $main;
             border: none;
 
+            cursor: pointer;
+
             @include reset;
+
+            &:hover {
+              background-color: $main-hover;
+            }
 
             &::before {
               position: absolute;
@@ -464,15 +501,6 @@ footer {
             text-decoration: underline;
           }
         }
-      }
-    }
-
-    .credentials {
-      margin-top: 76px;
-      text-align: center;
-
-      p {
-        margin-bottom: 16px;
       }
     }
   }

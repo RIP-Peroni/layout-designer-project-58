@@ -142,6 +142,9 @@ header .header-button {
   display: block;
   border: 0;
 }
+.container-video h2 {
+  text-align: center;
+}
 
 .light {
   text-align: left;
@@ -263,6 +266,10 @@ header .header-button {
   gap: 20px 30px;
   justify-content: flex-start;
 }
+.menu .container-menu a {
+  color: inherit;
+  text-decoration: none;
+}
 .menu .container-menu .card-header {
   display: inline-block;
   width: 350px;
@@ -282,6 +289,13 @@ header .header-button {
 .menu .container-menu .card h3 {
   margin-bottom: 16px;
 }
+.menu .container-menu .card:hover {
+  color: #fff;
+  background-color: #fe8a02;
+}
+.menu .container-menu .card:hover .hover-white {
+  color: #fff;
+}
 .menu .container-menu .card .card-number {
   margin-bottom: 40px;
   font-size: 64px;
@@ -292,6 +306,13 @@ header .header-button {
   height: 302px;
 }
 
+footer .credentials {
+  margin-top: 76px;
+  text-align: center;
+}
+footer .credentials p {
+  margin-bottom: 16px;
+}
 footer .container {
   box-sizing: content-box;
   padding: 100px 0;
@@ -313,10 +334,10 @@ footer .container .subscription-block .lets-subscribe h3 {
   color: #fff;
 }
 footer .container .subscription-block .email-block {
-  color: #fff;
   box-sizing: border-box;
   width: 50%;
   padding-left: 15px;
+  color: #fff;
 }
 footer .container .subscription-block .email-block .subscription-form {
   display: flex;
@@ -339,8 +360,12 @@ footer .container .subscription-block .email-block .subscription-form button {
   height: 50px;
   background-color: #fe8a02;
   border: none;
+  cursor: pointer;
   margin: 0;
   padding: 0;
+}
+footer .container .subscription-block .email-block .subscription-form button:hover {
+  background-color: #ba7000;
 }
 footer .container .subscription-block .email-block .subscription-form button::before {
   position: absolute;
@@ -364,13 +389,6 @@ footer .container .subscription-block .email-block p {
 footer .container .subscription-block .email-block p a {
   color: inherit;
   text-decoration: underline;
-}
-footer .container .credentials {
-  margin-top: 76px;
-  text-align: center;
-}
-footer .container .credentials p {
-  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=app.css.map */

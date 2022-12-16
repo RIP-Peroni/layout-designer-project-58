@@ -52,6 +52,7 @@ h1,
 h2,
 h3,
 h4 {
+  color: $main;
   font-weight: 400;
   font-family: $neucha-font;
   line-height: 1.2em;
@@ -85,8 +86,8 @@ h4 {
   margin-bottom: 30px;
 }
 
-.main-color {
-  color: $main;
+.dark-color {
+  color: $dark;
 }
 
 .white-color {
@@ -188,6 +189,142 @@ header {
   }
 }
 
+.light {
+  text-align: left;
+
+  background-color: $light;
+
+  .small-header {
+    color: $translucent-dark;
+    font-size: 24px;
+    font-family: $neucha-font;
+  }
+
+  .effect-description {
+    margin-top: 30px;
+
+    font-size: 34px;
+    font-family: $neucha-font;
+    line-height: 1.2;
+  }
+
+  .header {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+
+    background-color: $brown;
+
+    h4 {
+      color: $white;
+      font-weight: 700;
+      font-family: $open-sans-font;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+  }
+
+  .top-block {
+    width: 100%;
+
+    h2 {
+      color: $dark;
+    }
+
+    .items-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .left-part {
+        flex-basis: 578px;
+        flex-shrink: 0;
+
+        .img-top-block {
+          vertical-align: middle;
+        }
+      }
+
+      .right-part {
+        flex-basis: 502px;
+
+        @include no-desktop {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.brown {
+
+  color: $white;
+  text-align: left;
+
+  background-color: $brown;
+
+  .small-header {
+    color: $translucent-white;
+    font-size: 24px;
+    font-family: $neucha-font;
+  }
+
+  .effect-description {
+    margin-top: 30px;
+
+    font-size: 34px;
+    font-family: $neucha-font;
+    line-height: 1.2;
+  }
+
+  .header {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+
+    background-color: $white;
+
+    h4 {
+      color: $brown;
+      font-weight: 700;
+      font-family: $open-sans-font;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+  }
+
+  .top-block {
+    width: 100%;
+
+    h2 {
+      color: $white;
+    }
+
+    .items-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .img-part {
+        flex-basis: 578px;
+        flex-shrink: 0;
+
+        @include no-desktop {
+          margin-top: 10px;
+        }
+
+        .img-top-block {
+          vertical-align: middle;
+        }
+      }
+
+      .text-part {
+        flex-basis: 502px;
+      }
+    }
+  }
+}
+
 .menu {
   padding-top: 100px;
 
@@ -229,73 +366,6 @@ header {
 
     .higher-card {
       height: 302px;
-    }
-  }
-}
-
-header,
-#ikea-effect {
-  background-color: $light;
-
-  .small-header {
-    color: $translucent-dark;
-    font-size: 24px;
-    font-family: $neucha-font;
-  }
-
-  .effect-description {
-    margin-top: 30px;
-
-    font-size: 34px;
-    font-family: $neucha-font;
-    line-height: 1.2;
-  }
-}
-
-.brown {
-  text-align: left;
-
-  .header {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding: 5px 10px;
-
-    background-color: $brown;
-
-    h4 {
-      color: $white;
-      font-weight: 700;
-      font-family: $open-sans-font;
-      line-height: 1.2;
-      text-transform: uppercase;
-    }
-  }
-
-  .top-block {
-    width: 100%;
-
-    .items-flex {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      .left-part {
-        flex-basis: 578px;
-        flex-shrink: 0;
-
-        .img-top-block {
-          vertical-align: middle;
-        }
-      }
-
-      .right-part {
-        flex-basis: 502px;
-
-        @include no-desktop {
-          margin-top: 10px;
-        }
-      }
     }
   }
 }

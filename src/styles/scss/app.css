@@ -64,6 +64,11 @@ h4 {
   color: #fff;
 }
 
+.img-top-block {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  vertical-align: middle;
+}
+
 .columns-2 {
   text-align: left;
   column-count: 2;
@@ -189,9 +194,6 @@ header .header-button {
   flex-basis: 578px;
   flex-shrink: 0;
 }
-.light .top-block .items-flex .left-part .img-top-block {
-  vertical-align: middle;
-}
 .light .top-block .items-flex .right-part {
   flex-basis: 502px;
 }
@@ -249,9 +251,6 @@ header .header-button {
   .brown .top-block .items-flex .img-part {
     margin-top: 10px;
   }
-}
-.brown .top-block .items-flex .img-part .img-top-block {
-  vertical-align: middle;
 }
 .brown .top-block .items-flex .text-part {
   flex-basis: 502px;

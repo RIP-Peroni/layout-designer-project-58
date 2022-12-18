@@ -14,4 +14,4 @@ deploy:
 	npx surge ./src/
 
 compile:
-	sass --watch src/styles/scss/app.scss src/styles/scss/app.css
+	sass --watch src/styles/scss/app.scss src/styles/app.css

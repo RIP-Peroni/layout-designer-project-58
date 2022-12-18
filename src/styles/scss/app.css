@@ -65,8 +65,8 @@ h4 {
 }
 
 .img-top-block {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
   vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .columns-2 {

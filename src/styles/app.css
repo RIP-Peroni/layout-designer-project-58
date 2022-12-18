@@ -2,14 +2,17 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
+
 @font-face {
   font-family: Neucha;
   src: url("../fonts/Neucha-Regular.ttf");
 }
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
   color: #2a2626;
   font-weight: 400;
   font-size: 16px;
@@ -26,16 +29,18 @@ h1,
 h2,
 h3,
 h4 {
-  color: #fe8a02;
-  font-weight: 400;
-  font-family: "Neucha", sans-serif;
-  line-height: 1.2em;
   margin: 0;
   padding: 0;
+
+  color: #fe8a02;
+  font-weight: 400;
+  font-family: neucha, sans-serif;
+  line-height: 1.2em;
 }
 
 h1 {
   z-index: 1;
+
   font-size: 72px;
   text-align: left;
 }
@@ -66,7 +71,8 @@ h4 {
 
 .img-top-block {
   vertical-align: middle;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 .columns-2 {
@@ -74,23 +80,29 @@ h4 {
   column-count: 2;
   column-gap: 30px;
 }
+
 .columns-2 .second-column {
   break-before: column;
 }
 
 .bg {
   position: relative;
+
   width: 100%;
 }
+
 .bg::before {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   background: url("../img/background.png") no-repeat;
   background-size: cover;
   opacity: 0.1;
+
   content: "";
 }
 
@@ -100,6 +112,7 @@ section {
 
 .container {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,66 +125,84 @@ section {
 header {
   background-color: #f5f4f0;
 }
+
 header .container {
   align-items: flex-start;
   justify-content: space-between;
   height: 100vh;
   min-height: 900px;
 }
+
 header .main-img {
   position: absolute;
   top: 55px;
   right: -270px;
+
   height: 525px;
 }
+
 header .header-button {
   display: inline-block;
   margin-top: 40px;
   padding: 12px 24px;
+
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+
   background: #fe8a02;
 }
 
 .container-video {
   height: 805px;
 }
+
 .container-video .video {
   width: 919px;
   height: 569px;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
+
 .container-video iframe {
   display: block;
+
   border: 0;
 }
+
 .container-video h2 {
   text-align: center;
 }
 
 .light {
   text-align: left;
+
   background-color: #f5f4f0;
 }
+
 .light .small-header {
   color: #908d8b;
   font-size: 24px;
-  font-family: "Neucha", sans-serif;
+  font-family: neucha, sans-serif;
 }
+
 .light .effect-description {
   margin-top: 30px;
+
   font-size: 34px;
-  font-family: "Neucha", sans-serif;
+  font-family: neucha, sans-serif;
   line-height: 1.2;
 }
+
 .light .header {
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   background-color: #b09a81;
 }
+
 .light .header h4 {
   color: #fff;
   font-weight: 700;
@@ -179,24 +210,30 @@ header .header-button {
   line-height: 1.2;
   text-transform: uppercase;
 }
+
 .light .top-block {
   width: 100%;
 }
+
 .light .top-block h2 {
   color: #2a2626;
 }
+
 .light .top-block .items-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .light .top-block .items-flex .left-part {
   flex-basis: 578px;
   flex-shrink: 0;
 }
+
 .light .top-block .items-flex .right-part {
   flex-basis: 502px;
 }
+
 @media (max-width: 1079px) {
   .light .top-block .items-flex .right-part {
     margin-top: 10px;
@@ -206,25 +243,32 @@ header .header-button {
 .brown {
   color: #fff;
   text-align: left;
+
   background-color: #b09a81;
 }
+
 .brown .small-header {
   color: #d7ccc0;
   font-size: 24px;
-  font-family: "Neucha", sans-serif;
+  font-family: neucha, sans-serif;
 }
+
 .brown .effect-description {
   margin-top: 30px;
+
   font-size: 34px;
-  font-family: "Neucha", sans-serif;
+  font-family: neucha, sans-serif;
   line-height: 1.2;
 }
+
 .brown .header {
   margin-top: 100px;
   margin-bottom: 20px;
   padding: 5px 10px;
+
   background-color: #fff;
 }
+
 .brown .header h4 {
   color: #b09a81;
   font-weight: 700;
@@ -232,90 +276,115 @@ header .header-button {
   line-height: 1.2;
   text-transform: uppercase;
 }
+
 .brown .top-block {
   width: 100%;
 }
+
 .brown .top-block h2 {
   color: #fff;
 }
+
 .brown .top-block .items-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .brown .top-block .items-flex .img-part {
   flex-basis: 578px;
   flex-shrink: 0;
 }
+
 @media (max-width: 1079px) {
   .brown .top-block .items-flex .img-part {
     margin-top: 10px;
   }
 }
+
 .brown .top-block .items-flex .text-part {
   flex-basis: 502px;
 }
 
 #navigation {
   padding-top: 100px;
+
   background: #42413c;
 }
+
 #navigation .container-menu {
   flex-flow: row wrap;
   gap: 20px 30px;
   justify-content: flex-start;
 }
+
 #navigation .container-menu a {
   color: inherit;
   text-decoration: none;
 }
+
 #navigation .container-menu .card-header {
   display: inline-block;
   width: 350px;
   height: 323px;
   padding: 0;
 }
+
 #navigation .container-menu .card-header h2 {
   font-size: 52px;
 }
+
 #navigation .container-menu .card {
   width: 302px;
   height: 275px;
   padding: 24px;
+
   text-align: left;
+
   background: #f5f4f0;
 }
+
 #navigation .container-menu .card h3 {
   margin-bottom: 16px;
 }
+
 #navigation .container-menu .card:hover {
   color: #fff;
+
   background-color: #fe8a02;
 }
+
 #navigation .container-menu .card:hover .hover-white {
   color: #fff;
 }
+
 #navigation .container-menu .card .card-number {
   margin-bottom: 40px;
+
   font-size: 64px;
-  font-family: "Neucha", sans-serif;
+  font-family: neucha, sans-serif;
   line-height: 1em;
 }
+
 #navigation .container-menu .higher-card {
   height: 302px;
 }
 
 footer .credentials {
   margin-top: 76px;
+
   text-align: center;
 }
+
 footer .credentials p {
   margin-bottom: 16px;
 }
+
 footer .container {
   box-sizing: content-box;
   padding: 100px 0;
 }
+
 footer .container .subscription-block {
   display: flex;
   align-items: center;
@@ -324,70 +393,85 @@ footer .container .subscription-block {
   width: 100%;
   height: 190px;
   padding: 0 55px;
+
   background-color: #42413c;
 }
+
 footer .container .subscription-block .lets-subscribe {
   font-size: 34px;
 }
-footer .container .subscription-block .lets-subscribe h3 {
-  color: #fff;
-}
+
 footer .container .subscription-block .email-block {
   box-sizing: border-box;
   width: 50%;
   padding-left: 15px;
+
   color: #fff;
 }
+
 footer .container .subscription-block .email-block .subscription-form {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
+
 footer .container .subscription-block .email-block .subscription-form input {
   box-sizing: border-box;
   width: 86%;
   height: 50px;
   padding: 15px;
+
   border: none;
 }
+
 footer .container .subscription-block .email-block .subscription-form input::placeholder {
   opacity: 0.2;
 }
+
 footer .container .subscription-block .email-block .subscription-form button {
   position: relative;
+
   width: 70px;
   height: 50px;
+  margin: 0;
+  padding: 0;
+
   background-color: #fe8a02;
   border: none;
   cursor: pointer;
-  margin: 0;
-  padding: 0;
 }
+
 footer .container .subscription-block .email-block .subscription-form button:hover {
   background-color: #ba7000;
 }
+
 footer .container .subscription-block .email-block .subscription-form button::before {
   position: absolute;
   top: 13px;
   left: 23px;
+
   display: block;
   width: 24px;
   height: 24px;
+
   background: url("../img/send.svg") no-repeat;
   background-size: cover;
+
   content: "";
 }
+
 footer .container .subscription-block .email-block label {
   display: inline-block;
   margin-bottom: 9px;
+
   font-size: 18px;
 }
+
 footer .container .subscription-block .email-block p {
   font-size: 12px;
 }
-footer .container .subscription-block .email-block p a {
+
+footer .container .subscription-block .email-block p .email-block-a {
   color: inherit;
   text-decoration: underline;
 }
-
-/*# sourceMappingURL=app.css.map */
